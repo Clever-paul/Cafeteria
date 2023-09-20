@@ -1,0 +1,12 @@
+// nos ayuda a importar y usar el archivo 
+@use 'base'; /* no es nesesario especificar el index ya que sass lo reconoce */
+@use 'header';
+@use 'footer';
+@use 'inicio';
+@use 'internas';
+
+
+// las utilidades en sass simepre se compilan al final 
+@use 'utilidades';
+
+

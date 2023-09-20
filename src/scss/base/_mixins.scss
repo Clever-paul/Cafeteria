@@ -1,0 +1,27 @@
+// los mixins son pequeñas partes de codigo reutilisables
+// se parece mucho a las funciones  puede recibir valores
+@use 'variables' as v;
+
+@mixin telefono {
+    @media (min-width: v.$telefono){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop){
+        @content;
+    }
+}
+
+@mixin grid ($columnas, $espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
